@@ -1,7 +1,7 @@
 package services
 
 import (
-	"github.com/wr125/fullstack/db"
+	"github.com/wr125/fullstack/views/db"
 	"golang.org/x/crypto/bcrypt"
 )
 

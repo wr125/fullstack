@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/wr125/fullstack/db"
+	"github.com/wr125/fullstack/views/db"
 )
 
 func NewTodoServices(t Todo, tStore db.Store) *TodoServices {

@@ -13,7 +13,7 @@ import "bytes"
 import (
 	"strconv"
 
-	"github.com/wr125/fullstack/services"
+	"github.com/wr125/fullstack/views/services"
 )
 
 func UpdateTodo(todo services.Todo, tz string) templ.Component {

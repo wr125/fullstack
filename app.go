@@ -1,9 +1,9 @@
 package main
 
 import (
-	"github.com/wr125/fullstack/db"
-	"github.com/wr125/fullstack/handlers"
-	"github.com/wr125/fullstack/services"
+	"github.com/wr125/fullstack/views/db"
+	"github.com/wr125/fullstack/views/handlers"
+	"github.com/wr125/fullstack/views/services"
 
 	"github.com/gorilla/sessions"
 	"github.com/labstack/echo-contrib/session"
@@ -21,6 +21,7 @@ const (
 )
 
 func main() {
+
 	port := os.Getenv("PORT")
 	if port == "" {
 		port = "8080"

@@ -7,8 +7,8 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/wr125/fullstack/services"
-	"github.com/wr125/fullstack/views/auth_views"
+	auth_views "github.com/wr125/fullstack/views"
+	"github.com/wr125/fullstack/views/services"
 	"golang.org/x/crypto/bcrypt"
 
 	"github.com/a-h/templ"

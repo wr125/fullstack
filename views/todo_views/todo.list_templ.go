@@ -15,7 +15,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/wr125/fullstack/services"
+	"github.com/wr125/fullstack/views/services"
 	"github.com/wr125/fullstack/views/layout"
 )
 
