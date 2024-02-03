@@ -9,11 +9,15 @@ primary_region = "lhr"
 [build]
   builder = "paketobuildpacks/builder:base"
   buildpacks = ["gcr.io/paketo-buildpacks/go"]
+
+
   [build.args]
-    BP_KEEP_FILES = "assets/*:img/*:css/*"
+  BP_KEEP_FILES = "assets/*:img/*:css/*"
+  BP_GO_BUILD_IMPORT_PATH = "github.com/wr125/fullstack/handlers"
 
 [env]
   PORT = "8080"
+  
 
 [http_service]
   internal_port = 8080

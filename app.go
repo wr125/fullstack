@@ -1,9 +1,9 @@
 package main
 
 import (
-	"github.com/emarifer/go-echo-templ-htmx/db"
-	"github.com/emarifer/go-echo-templ-htmx/handlers"
-	"github.com/emarifer/go-echo-templ-htmx/services"
+	"github.com/wr125/fullstack/db"
+	"github.com/wr125/fullstack/handlers"
+	"github.com/wr125/fullstack/services"
 
 	"github.com/gorilla/sessions"
 	"github.com/labstack/echo-contrib/session"

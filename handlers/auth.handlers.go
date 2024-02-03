@@ -7,8 +7,8 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/emarifer/go-echo-templ-htmx/services"
-	"github.com/emarifer/go-echo-templ-htmx/views/auth_views"
+	"github.com/wr125/fullstack/services"
+	"github.com/wr125/fullstack/views/auth_views"
 	"golang.org/x/crypto/bcrypt"
 
 	"github.com/a-h/templ"

@@ -13,7 +13,7 @@ import "bytes"
 import (
 	"strconv"
 
-	"github.com/emarifer/go-echo-templ-htmx/services"
+	"github.com/wr125/fullstack/services"
 )
 
 func UpdateTodo(todo services.Todo, tz string) templ.Component {

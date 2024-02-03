@@ -6,10 +6,10 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/emarifer/go-echo-templ-htmx/services"
-	"github.com/emarifer/go-echo-templ-htmx/views/todo_views"
 	"github.com/labstack/echo-contrib/session"
 	"github.com/labstack/echo/v4"
+	"github.com/wr125/fullstack/services"
+	"github.com/wr125/fullstack/views/todo_views"
 	"golang.org/x/text/cases"
 	"golang.org/x/text/language"
 )

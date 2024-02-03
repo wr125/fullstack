@@ -10,7 +10,7 @@ import "context"
 import "io"
 import "bytes"
 
-import "github.com/emarifer/go-echo-templ-htmx/views/layout"
+import "github.com/wr125/fullstack/views/layout"
 
 func Login(fromProtected bool) templ.Component {
 	return templ.ComponentFunc(func(ctx context.Context, templ_7745c5c3_W io.Writer) (templ_7745c5c3_Err error) {

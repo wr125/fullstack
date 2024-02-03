@@ -15,8 +15,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/emarifer/go-echo-templ-htmx/services"
-	"github.com/emarifer/go-echo-templ-htmx/views/layout"
+	"github.com/wr125/fullstack/services"
+	"github.com/wr125/fullstack/views/layout"
 )
 
 func TodoList(titlePage string, todos []services.Todo) templ.Component {
