@@ -1,6 +1,9 @@
 package main
 
 import (
+	"log"
+
+	"github.com/joho/godotenv"
 	"github.com/wr125/fullstack/views/db"
 	"github.com/wr125/fullstack/views/handlers"
 	"github.com/wr125/fullstack/views/services"
@@ -21,18 +24,18 @@ const (
 )
 
 func main() {
+	err := godotenv.Load()
+	if err != nil {
+		log.Fatal(".env file could not load")
+	}
+	secretKey := os.Getenv("SECRET_KEY")
+	dbname := os.Getenv("DB_NAME")
 
 	port := os.Getenv("PORT")
 	if port == "" {
 		port = "8080"
 	}
-	// http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-	// 	data := map[string]string{
-	// 		"Region": os.Getenv("FLY_REGION"),
-	// 	}
 
-	// 	t.ExecuteTemplate(w, "index.html.tmpl", data)
-	// })
 	e := echo.New()
 
 	e.Static("/", "assets")
@@ -44,9 +47,9 @@ func main() {
 	e.Use(middleware.Logger())
 
 	// Session Middleware
-	e.Use(session.Middleware(sessions.NewCookieStore([]byte(SECRET_KEY))))
+	e.Use(session.Middleware(sessions.NewCookieStore([]byte(secretKey))))
 
-	store, err := db.NewStore(DB_NAME)
+	store, err := db.NewStore(dbname)
 	if err != nil {
 		e.Logger.Fatalf("failed to create store: %s", err)
 	}
