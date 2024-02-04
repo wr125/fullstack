@@ -140,7 +140,7 @@ func (ah *AuthHandler) loginHandler(c echo.Context) error {
 		)
 		if err != nil {
 			// In production you have to give the user a generic message
-			setFlashmessages(c, "error", "Incorrect password")
+			setFlashmessages(c, "error", "Incorrect details")
 
 			return c.Redirect(http.StatusSeeOther, "/login")
 		}
@@ -149,7 +149,7 @@ func (ah *AuthHandler) loginHandler(c echo.Context) error {
 		sess, _ := session.Get(auth_sessions_key, c)
 		sess.Options = &sessions.Options{
 			Path:     "/",
-			MaxAge:   3600, // in seconds
+			MaxAge:   9900, // in seconds
 			HttpOnly: true,
 		}
 

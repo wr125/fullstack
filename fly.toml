@@ -15,8 +15,7 @@ primary_region = "lhr"
 
 [env]
 PORT = "8080"
-SECRET_KEY= "mysecret"
-DB_NAME= "app_data.db"
+
 
 [http_service]
   internal_port = 8080
