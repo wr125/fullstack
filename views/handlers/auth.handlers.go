@@ -149,7 +149,7 @@ func (ah *AuthHandler) loginHandler(c echo.Context) error {
 		sess, _ := session.Get(auth_sessions_key, c)
 		sess.Options = &sessions.Options{
 			Path:     "/",
-			MaxAge:   9900, // in seconds
+			MaxAge:   3600, // in seconds
 			HttpOnly: true,
 		}
 
