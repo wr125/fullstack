@@ -3,7 +3,7 @@ package auth_views
 import "github.com/wr125/fullstack/views/layout"
 
 templ Login(fromProtected bool) {
-	<section class="card w-fit bg-base-200 shadow-xl mx-auto mb-8">
+	<section class="card w-fit bg-base-200 shadow-2xl mx-auto mb-8">
 		<div class="card-body pb-2">
 			<h1 class="card-title border-b border-b-slate-600 pb-[4px]">
 				Log In
@@ -18,7 +18,7 @@ templ Login(fromProtected bool) {
 				<label class="flex flex-col justify-start gap-2">
 					Email:
 					<input
- 						class="input input-bordered input-primary bg-slate-800"
+ 						class="input input-bordered input-primary bg-slate-300"
  						type="email"
  						name="email"
  						required
@@ -32,7 +32,7 @@ templ Login(fromProtected bool) {
 				<label class="flex flex-col justify-start gap-2">
 					Password:
 					<input
- 						class="input input-bordered input-primary bg-slate-800"
+ 						class="input input-bordered input-primary bg-slate-300"
  						type="password"
  						name="password"
  						required

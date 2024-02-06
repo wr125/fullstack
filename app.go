@@ -18,10 +18,10 @@ import (
 
 // In production, the secret key of the CookieStore
 // and database name would be obtained from a .env file
-const (
-	SECRET_KEY string = "secret"
-	DB_NAME    string = "app_data.db"
-)
+// const (
+// 	SECRET_KEY string = "secret"
+// 	DB_NAME    string = "app_data.db"
+// )
 
 func main() {
 	err := godotenv.Load()
@@ -64,7 +64,7 @@ func main() {
 	handlers.SetupRoutes(e, ah, th)
 
 	// Start Server
-	e.Logger.Fatal(e.Start(":" + port))
+	e.Logger.Fatal(e.Start("0.0.0.0:" + port))
 }
 
 /*

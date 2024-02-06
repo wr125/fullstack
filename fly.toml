@@ -1,4 +1,4 @@
-# fly.toml app configuration file generated for good on 2024-02-03T21:13:38Z
+# fly.toml app configuration file generated for good on 2024-02-06T14:32:53Z
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
@@ -14,8 +14,9 @@ primary_region = "lhr"
     BP_KEEP_FILES = "assets/*:"
 
 [env]
-PORT = "8080"
-
+  PORT = "8080"
+  SECRET_KEY="zipaaformaa"
+  DB_NAME="app_data.db"
 
 [http_service]
   internal_port = 8080

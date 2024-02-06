@@ -5,8 +5,8 @@ tmp_dir = "tmp"
 
 [build]
   args_bin = []
-  bin = "./views/tmp/main.exe"
-  cmd = "go build -o ./views/tmp/main.exe ./cmd/app.go"
+  bin = "./tmp/main.exe"
+  cmd = "templ generate && go build -o ./tmp/main.exe ."
   delay = 1000
   exclude_dir = ["assets", "tmp", "vendor", "testdata"]
   exclude_file = []

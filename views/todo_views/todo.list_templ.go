@@ -15,8 +15,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/wr125/fullstack/views/services"
 	"github.com/wr125/fullstack/views/layout"
+	"github.com/wr125/fullstack/views/services"
 )
 
 func TodoList(titlePage string, todos []services.Todo) templ.Component {
@@ -32,7 +32,7 @@ func TodoList(titlePage string, todos []services.Todo) templ.Component {
 			templ_7745c5c3_Var1 = templ.NopComponent
 		}
 		ctx = templ.ClearChildren(ctx)
-		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("<div class=\"flex justify-between max-w-2xl mx-auto border-b border-b-slate-600 mb-8 pb-2\"><h1 class=\"text-2xl font-bold text-center\">")
+		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("<div class=\"flex justify-between max-w-2xl mx-auto border-b border-b-slate-300 mb-8 pb-2\"><h1 class=\"text-2xl font-bold text-center\">")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
@@ -45,7 +45,7 @@ func TodoList(titlePage string, todos []services.Todo) templ.Component {
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("</h1><a hx-swap=\"transition:true\" class=\"badge badge-info p-4 hover:scale-[1.1]\" href=\"/todo/create\">New</a></div><section class=\"overflow-auto max-w-2xl max-h-96 mx-auto bg-slate-600 rounded-lg shadow-xl\"><table class=\"table table-zebra\"><!-- head --><thead class=\"bg-slate-700\"><tr><th></th><th>Tasks</th><th>Status</th><th class=\"text-center\">Options</th></tr></thead> ")
+		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("</h1><a hx-swap=\"transition:true\" class=\"badge badge-info p-4 hover:scale-[1.1]\" href=\"/todo/create\">New</a></div><section class=\"overflow-auto max-w-2xl max-h-96 mx-auto bg-slate-300 rounded-lg shadow-xl\"><table class=\"table table-zebra\"><!-- head --><thead class=\"bg-slate-300\"><tr><th></th><th>Tasks</th><th>Status</th><th class=\"text-center\">Options</th></tr></thead> ")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
